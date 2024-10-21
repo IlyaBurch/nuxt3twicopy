@@ -1,5 +1,6 @@
 <template>
 	<div :class="{ dark: darkmode }">
+		<div id="modals" class="relative z-20"></div>
 		<div class="flex dark:bg-black">
 			<Header />
 			<NuxtPage />

@@ -13,5 +13,11 @@
 	"posts": "Постов",
 	"Follow": "Читать",
 	"Tweet": "Твитнуть",
-	"All right doesn't belong to me, studying purpose only": "Все права принадлежат не мне, сайт создан в некоммерческих учебных целях"
+	"All right doesn't belong to me, studying purpose only": "Все права принадлежат не мне, сайт создан в некоммерческих учебных целях",
+	"Oops": "Ой-ой-ой",
+	"Sorry, this page is not implemented yet": "Извините, эта страница еще не реализована",
+	"Go back": "Вернуться",
+	"Imagine that you had followed that account": "Представьте, что вы подписались на этого пользователя",
+	"Please remember that you wanted to tweet - cause that button is not implemented yet": "Пожалуйста, запомните, что вы хотели публиковать - потому что этот элемент еще не реализован",
+	"Close": "Эх блин"
 }

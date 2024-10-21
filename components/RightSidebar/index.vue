@@ -23,12 +23,12 @@
 			items: [
 				{
 					name: "Nuxt 3",
-					link: "#",
+					link: "/error",
 					count: 10,
 				},
 				{
 					name: "Nuxt 3",
-					link: "#",
+					link: "/error",
 					count: 10,
 				},
 			],
@@ -39,13 +39,13 @@
 			items: [
 				{
 					name: "Nuxt 3",
-					link: "#",
+					link: "/error",
 					username: "@nuxt",
 					avatar: "assets/images/avatar.png",
 				},
 				{
 					name: "Nuxt 3",
-					link: "#",
+					link: "/error",
 					username: "@nuxt",
 					avatar: "assets/images/avatar.png",
 				},

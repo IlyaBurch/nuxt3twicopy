@@ -6,7 +6,7 @@
 			{{ $t(props.title) }}
 		</h3>
 		<slot />
-		<NuxtLink to="#">
+		<NuxtLink to="error">
 			<div
 				class="p-3 text-sm text-blue-400 hover:bg-gray-100 dark:hover:bg-dim-300 dflt-transition">
 				{{ $t("Show more") }}

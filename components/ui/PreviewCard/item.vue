@@ -1,7 +1,7 @@
 <template>
 	<NuxtLink v-if="props.type === 'trends'" :to="props.link">
 		<div
-			class="m-2 border rounded-2xl bg-gray-50 dark:bg-dim-700 twi-border-color p-4">
+			class="m-2 border rounded-2xl bg-gray-100 dark:bg-black hover:bg-gray-200 dark:hover:bg-dim-300 twi-border-color p-4">
 			<h2 class="font-bold text-gray-800 text-md dark:text-white">
 				{{ props.name }}
 			</h2>
@@ -12,28 +12,54 @@
 		v-else-if="props.type === 'users'"
 		class="flex flex-row justify-between p-2">
 		<div class="flex flex-row">
-			<NuxtImg
-				:src="props.avatar"
-				class="w-10 h-10 rounded-full"
-				:alt="`${props.name}'s avatar'`" />
+			<NuxtLink :to="props.link">
+				<NuxtImg
+					:src="props.avatar"
+					class="w-10 h-10 rounded-full"
+					:alt="`${props.name}'s avatar'`" />
+			</NuxtLink>
 
 			<div class="flex flex-col ml-2">
-				<h4 class="text-sm font-bold text-gray-900 dark:text-white">
-					{{ props.name }}
-				</h4>
-				<p class="text-xs text-gray-400 dark:text-gray-350">
-					{{ props.username }} {{ $t("posts") }}
-				</p>
+				<NuxtLink :to="props.link">
+					<h4 class="text-sm font-bold text-gray-900 dark:text-white">
+						{{ props.name }}
+					</h4>
+				</NuxtLink>
+				<NuxtLink :to="props.link">
+					<p class="text-xs text-gray-400 dark:text-gray-350">
+						{{ props.username }} {{ $t("posts") }}
+					</p>
+				</NuxtLink>
 			</div>
 		</div>
 		<button
-			class="flex items-center h-full rounded-full bg-black text-white dark:bg-white dark:text-black">
+			class="flex items-center h-full rounded-full bg-black text-white dark:bg-white dark:text-black"
+			@click="showModal = true">
 			<span class="p-2 py-2 text-sm">{{ $t("Follow") }}</span>
 		</button>
+		<!-- todo: delete that shit -->
+		<modals :show="showModal">
+			<div
+				class="p-4 flex flex-col align-center justify-center dflt-transition bg-white dark:bg-black text-black dark:text-white">
+				<div class="text-lg">
+					{{ $t("Imagine that you had followed that account") }}
+				</div>
+
+				<NuxtImg class="w-full pt-4" src="sddefault.jpg" />
+
+				<button
+					type="button"
+					class="bg-blue-500 dark:bg-white text-white dark:text-black rounded-full text-xl p-4 py-1 font-medium mt-4"
+					@click="showModal = false">
+					{{ $t("Close") }}
+				</button>
+			</div>
+		</modals>
 	</div>
 </template>
 
 <script setup>
+	const showModal = ref(false);
 	const props = defineProps({
 		link: {
 			type: String,

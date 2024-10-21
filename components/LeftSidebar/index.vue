@@ -57,9 +57,30 @@
 				</LeftSidebarTab>
 			</nuxt-link>
 
-			<button class="rounded-full bg-blue-500 p-2">
+			<button class="rounded-full bg-blue-500 p-2" @click="showModal = true">
 				<span class="text-white">{{ $t("Tweet") }}</span>
 			</button>
+			<modals :show="showModal">
+				<div
+					class="p-4 rounded-full flex flex-col align-center justify-center dflt-transition bg-white dark:bg-black text-black dark:text-white">
+					<div class="text-lg">
+						{{
+							$t(
+								"Please remember that you wanted to tweet - cause that button is not implemented yet"
+							)
+						}}
+					</div>
+
+					<NuxtImg class="pt-4" src="depression.jpg" />
+
+					<button
+						type="button"
+						class="bg-blue-500 dark:bg-white text-white dark:text-black rounded-full text-xl p-4 py-1 font-medium mt-4"
+						@click="showModal = false">
+						{{ $t("Close") }}
+					</button>
+				</div>
+			</modals>
 		</li>
 	</div>
 </template>
@@ -76,6 +97,7 @@
 		InboxIcon,
 		UserIcon,
 	} from "@heroicons/vue/16/solid";
+	const showModal = ref(false);
 </script>
 
 <style></style>
