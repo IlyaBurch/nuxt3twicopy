@@ -62,7 +62,7 @@
 			</button>
 			<modals :show="showModal">
 				<div
-					class="p-4 rounded-full flex flex-col align-center justify-center dflt-transition bg-white dark:bg-black text-black dark:text-white">
+					class="p-4 flex flex-col align-center justify-center dflt-transition bg-white dark:bg-black text-black dark:text-white">
 					<div class="text-lg">
 						{{
 							$t(
