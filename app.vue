@@ -1,9 +1,11 @@
 <template>
 	<div :class="{ dark: darkmode }">
 		<div id="modals" class="relative z-20"></div>
-		<div class="flex dark:bg-black">
-			<Header />
-			<NuxtPage />
+		<div class="flex justify-center dark:bg-black">
+			<div class="flex px-auto">
+				<Header />
+				<NuxtPage />
+			</div>
 		</div>
 	</div>
 </template>
