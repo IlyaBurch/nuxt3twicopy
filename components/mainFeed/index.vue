@@ -9,7 +9,7 @@
 		<!-- TODO: вынести форму в отдельный компонент, чтобы переиспользовать ленту -->
 		<UiTweetForm class="border-l-0 border-r-0 border-b-1 twi-border-color" />
 		<UiTweet
-			v-for="(tweet, i) in props.tweets"
+			v-for="(tweet, i) in tweets"
 			:key="i"
 			:name="tweet.name"
 			:username="tweet.username"
@@ -24,11 +24,74 @@
 			type: String,
 			required: true,
 		},
-		tweets: {
-			type: Array,
-			required: true,
-		},
+		// tweets: {
+		// 	type: Array,
+		// 	required: true,
+		// },
 	});
+
+	const tweets = [
+		{
+			name: "John Doe",
+			username: "johndoe",
+			text: "lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		},
+		{
+			name: "Jane Doe",
+			username: "janedoe",
+			text: "Hello, world!",
+		},
+		{
+			name: "John Doe",
+			username: "johndoe",
+			text: "Hello, world!",
+		},
+		{
+			name: "Jane Doe",
+			username: "janedoe",
+			text: "Hello, world!",
+		},
+		{
+			name: "John Doe",
+			username: "johndoe",
+			text: "lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		},
+		{
+			name: "Jane Doe",
+			username: "janedoe",
+			text: "Hello, world!",
+		},
+		{
+			name: "John Doe",
+			username: "johndoe",
+			text: "Hello, world!",
+		},
+		{
+			name: "Jane Doe",
+			username: "janedoe",
+			text: "Hello, world!",
+		},
+		{
+			name: "John Doe",
+			username: "johndoe",
+			text: "lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		},
+		{
+			name: "Jane Doe",
+			username: "janedoe",
+			text: "Hello, world!",
+		},
+		{
+			name: "John Doe",
+			username: "johndoe",
+			text: "Hello, world!",
+		},
+		{
+			name: "Jane Doe",
+			username: "janedoe",
+			text: "Hello, world!",
+		},
+	];
 </script>
 
 <style></style>

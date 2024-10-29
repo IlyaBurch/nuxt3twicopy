@@ -12,7 +12,7 @@
 	<main>
 		<div class="flex">
 			<!-- Основная лента -->
-			<MainFeed :title="$t('Home')" :tweets="tweets" />
+			<MainFeed :title="$t('Home')" />
 			<!-- Right sidebar со sticky эффектом -->
 			<div class="hidden lg:block">
 				<div class="sticky top-0 lg:w-72 xl:w-80">
@@ -23,69 +23,6 @@
 	</main>
 </template>
 
-<script setup>
-	const tweets = [
-		{
-			name: "John Doe",
-			username: "johndoe",
-			text: "lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		},
-		{
-			name: "Jane Doe",
-			username: "janedoe",
-			text: "Hello, world!",
-		},
-		{
-			name: "John Doe",
-			username: "johndoe",
-			text: "Hello, world!",
-		},
-		{
-			name: "Jane Doe",
-			username: "janedoe",
-			text: "Hello, world!",
-		},
-		{
-			name: "John Doe",
-			username: "johndoe",
-			text: "lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		},
-		{
-			name: "Jane Doe",
-			username: "janedoe",
-			text: "Hello, world!",
-		},
-		{
-			name: "John Doe",
-			username: "johndoe",
-			text: "Hello, world!",
-		},
-		{
-			name: "Jane Doe",
-			username: "janedoe",
-			text: "Hello, world!",
-		},
-		{
-			name: "John Doe",
-			username: "johndoe",
-			text: "lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		},
-		{
-			name: "Jane Doe",
-			username: "janedoe",
-			text: "Hello, world!",
-		},
-		{
-			name: "John Doe",
-			username: "johndoe",
-			text: "Hello, world!",
-		},
-		{
-			name: "Jane Doe",
-			username: "janedoe",
-			text: "Hello, world!",
-		},
-	];
-</script>
+<script setup></script>
 
 <style></style>
