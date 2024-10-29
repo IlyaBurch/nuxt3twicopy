@@ -1,5 +1,12 @@
 <template>
-	<div class="p-2 w-twi">shieeet</div>
+	<section class="flex">
+		<UiAvatar alt="user" />
+		<article class="flex">
+			<h5>Name</h5>
+			<span>@username</span>
+		</article>
+	</section>
+	what the fuck
 </template>
 
 <script lang="ts" setup></script>

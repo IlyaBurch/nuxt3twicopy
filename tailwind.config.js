@@ -5,6 +5,7 @@ module.exports = {
 	theme: {
 		screens: {
 			xs: "614px",
+			tw: "700x",
 			sm: "1002px",
 			md: "1022px",
 			lg: "1092px",
@@ -13,8 +14,9 @@ module.exports = {
 
 		extend: {
 			spacing: {
-				twi: "600px",
-				twiS: "500px",
+				twi: "598px",
+				twiM: "563px",
+				twiS: "504px",
 			},
 			colors: {
 				dim: {
