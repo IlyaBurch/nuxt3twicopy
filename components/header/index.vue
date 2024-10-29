@@ -1,5 +1,5 @@
 <template>
-	<header class="sticky top-0">
+	<header>
 		<LeftSidebar />
 		<button class="bg-blue-500 text-white">
 			<span v-show="!darkmode" @click.prevent="darkmode = true">Light</span>

@@ -38,23 +38,6 @@
 			<span class="p-2 py-2 text-sm">{{ $t("Follow") }}</span>
 		</button>
 		<!-- todo: delete that shit -->
-		<modals :show="showModal">
-			<div
-				class="p-4 flex flex-col align-center justify-center dflt-transition bg-white dark:bg-black text-black dark:text-white">
-				<div class="text-lg">
-					{{ $t("Imagine that you had followed that account") }}
-				</div>
-
-				<NuxtImg class="w-full pt-4" src="sddefault.jpg" />
-
-				<button
-					type="button"
-					class="bg-blue-500 dark:bg-white text-white dark:text-black rounded-full text-xl p-4 py-1 font-medium mt-4"
-					@click="showModal = false">
-					{{ $t("Close") }}
-				</button>
-			</div>
-		</modals>
 	</div>
 </template>
 
