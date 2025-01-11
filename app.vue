@@ -6,14 +6,6 @@ const darkmode = useState('darkmode', () => false)
 </script>
 
 <template>
-  <!-- <div :class="{ dark: darkmode }">
-		<div class="flex mix-h-screen justify-center dark:bg-black">
-			<Header class="sticky top-0" />
-			<NuxtPage />
-		</div>
-	</div> -->
-  <!-- <div :class="{ dark: darkmode }" class="min-h-screen w-screen dark:bg-black">
-		<div class="w-full flex"> -->
   <div :class="{ dark: darkmode }">
     <div class="flex justify-center min-h-screen w-screen dark:bg-black">
       <!-- Левая панель с Header -->

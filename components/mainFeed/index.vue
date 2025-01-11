@@ -84,7 +84,7 @@ const tweets = [
       </h2>
     </div>
     <!-- TODO: вынести форму в отдельный компонент, чтобы переиспользовать ленту -->
-    <UiTweetForm class="border-l-0 border-r-0 border-b-1 twi-border-color" />
+    <TweetForm class="border-l-0 border-r-0 border-b-1 twi-border-color" />
     <UiTweet
       v-for="(tweet, i) in tweets"
       :key="i"
