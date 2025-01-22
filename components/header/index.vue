@@ -1,5 +1,5 @@
 <script setup>
-const darkmode = useState('darkmode', n => !n.value)
+
 </script>
 
 <template>
