@@ -2,11 +2,11 @@
 <script setup>
 import '@/assets/styles/index.css'
 
-const darkmode = useState('darkmode', () => false)
+const setColor = computed(() => useColorMode().value === 'dark')
 </script>
 
 <template>
-  <div :class="{ dark: darkmode }">
+  <div :class="{ dark: setColor }">
     <div class="flex justify-center min-h-screen w-full dark:bg-black">
       <!-- Левая панель с Header -->
       <aside class="w-fill pr-0 sticky top-0 h-screen">

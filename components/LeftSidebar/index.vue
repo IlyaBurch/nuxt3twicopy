@@ -12,7 +12,7 @@ import {
 } from '@heroicons/vue/16/solid'
 import TwitterLogo from '~/assets/icons/TwitterLogo.vue'
 
-const lg = useState('lg', () => false)
+// const lg = useState('lg', () => false)
 </script>
 
 <template>

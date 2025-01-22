@@ -14,8 +14,11 @@
   "dependencies": {
     "@heroicons/vue": "^2.1.5",
     "@nuxt/image": "^1.8.1",
+    "@nuxtjs/color-mode": "3.5.2",
     "@nuxtjs/i18n": "^8.5.5",
+    "@pinia/nuxt": "^0.9.0",
     "nuxt": "^3.13.0",
+    "pinia": "^2.3.1",
     "vue": "latest",
     "vue-router": "latest"
   },
